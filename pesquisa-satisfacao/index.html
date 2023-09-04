@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!--Meta tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Título da página-->
+    <title>Pesquisa de satisfação</title>
+    <!--Importando estilos CSS-->
+    <link rel="stylesheet" href="../pesquisa/pesquisa.css" />
+  </head>
+  <!-- Início do corpo da página -->
+  <body>
+    <!-- Uma div com um ID e classe -->
+    <div id="caixa" class="caixa_pesquisa">
+      <!-- Cabeçalho principal da pesquisa -->
+      <h1>Como você se sente em relação à nossos serviços?</h1>
+      <!-- Caixa para opções de classificação -->
+      <div class="caixa_classificação">
+        <!-- Uma div para cada sentimento com a classe "classificação" -->
+        <div class="classificação">
+          <!-- Imagem do sentimento -->
+          <img src="../pesquisa/imagens/triste.png" alt="Triste ícones criados por Freepik - Flaticon">
+          <!--Leganda do sentimento-->
+          <p>Insatisfeito</p>
+        </div>
+
+        <div class="classificação">
+          <img src="../pesquisa/imagens/neutro.png" alt="Neutro ícones criados por Freepik - Flaticon"/>
+          <p>Neutro</p>
+        </div>
+
+        <div class="classificação active">
+          <img src="../pesquisa/imagens/apaixonado.png" alt="Apaixonado ícones criados por Freepik - Flaticon"/>
+          <p>Satisfeito</p>
+        </div>
+      </div>
+      <!-- Um botão para enviar a pesquisa -->
+      <button class="btn" id="send">Enviar pesquisa</button>
+    </div>
+    <!-- Importa um arquivo JavaScript externo -->
+    <script src="../pesquisa/jspesquisa.js/index.js"></script>
+  </body>
+</html>
