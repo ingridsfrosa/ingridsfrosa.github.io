@@ -1,7 +1,7 @@
 /* Define um @font-face para importar a fonte Lato-Regular */
 @font-face {
     font-family: "Lato-Regular";
-    src: url("/fontes/Lato-Regular.ttf") format("truetype");
+    src: url("fontes/Lato-Regular.ttf") format("truetype");
 }
 /* Define estilos globais para todos os elementos */
 * {
