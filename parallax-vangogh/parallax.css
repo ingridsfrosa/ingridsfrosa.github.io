@@ -1,0 +1,83 @@
+/* Definições gerais para o corpo (body) da página */
+body{
+    margin: 0;
+    padding: 0;
+    color: #FFFF; /* Cor do texto */
+    background-color: #034C8C; /* Cor de fundo */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+    word-wrap: break-word; /* Quebra de palavra para evitar que palavras longas estourem as margens */
+    overflow-wrap: break-word; /* Quebra de palavra em caso de overflow */
+}
+/* Estilização para os títulos de nível 2 (h2) */
+h2{
+    font-weight: 600; /* Peso da fonte (mais grossa) */
+    color: #FFFF; /* Cor do texto */
+}
+/* Estilização para links */
+a{
+    text-decoration: none; /* Remove decoração de link sublinhado */
+    color: #FFFF; /* Cor do link */
+}
+/* Estilização para links quando passam o mouse por cima */
+a:hover{
+    text-decoration: underline; /* Adiciona um sublinhado quando o mouse passa por cima */
+}
+/* Configurações para o contêiner principal (involucro) */
+.involucro {
+    width: 100%; /* Faz ocupar 100% do espaço */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+/* Configurações para a seção principal (main) */
+main{
+    display: block;
+}
+/* Estilização para o conteúdo principal (content) */
+.content {
+    width: 100%;
+    max-width: 760px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 0 20px; /* Preenchimento interno nas laterais */
+}
+/* Configurações para os módulos (seções) */
+.modulo p{
+    margin-bottom: 40px; /* Margem inferior entre parágrafos */
+}
+/* Estilização para o último módulo, remove a margem inferior */
+.modulo:last-child{
+    margin-bottom: 0;
+}
+/* Estilização para os títulos de módulos (h2) */
+.modulo h2{
+    margin-bottom: 40px; /* Margem inferior entre títulos e conteúdo */
+}
+/* Estilização para o conteúdo dentro dos módulos */
+.modulo .content{
+    padding: 40px 0; /* Preenchimento interno superior e inferior */
+}
+/* Configurações para os módulos de parallax */
+.modulo.parallax {
+    display: flex; /* Configura como um flex container */
+    flex-direction: column; /* Direção da coluna (alinhamento vertical) */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    text-align: center; /* Alinha o texto no centro */
+    height: 100vh !important; /* Altura igual à altura da janela (viewport) */
+    width: 100%; /* Largura total */
+    position: relative; /* Define como posição relativa */
+    overflow: hidden; /* Esconde conteúdo que transborda */
+    background-position: 50% 50%; /* Posição de fundo centralizada */
+    background-repeat: no-repeat; /* Evita repetição de fundo */
+    background-attachment: fixed; /* Fundo fixo durante o scroll que dá o efeito do design*/
+    background-size: cover; /* Cobertura total do fundo */
+}
+/* Adicionando as fotos */
+.modulo.parallax.parallax_1 {
+    background-image: url(/parallax/imagens/noite_estrelada.jpg);
+}
+
+.modulo.parallax.parallax_2 {
+    background-image: url(/parallax/imagens/amendoeira_em_flor.jpg);
+}
+
+.modulo.parallax.parallax_3 {
+    background-image: url(/parallax/imagens/girassois.jpg);
+}
