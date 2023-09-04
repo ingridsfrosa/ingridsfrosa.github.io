@@ -1,0 +1,54 @@
+/* Define estilos para a classe contato */
+.contato {
+    background-color: #B4CED9; /* Define a cor de fundo como #B4CED9 (um tom de azul claro) */
+    scroll-margin-top: 8rem; /* Define a margem superior para a ancoragem de rolagem como 8rem */
+    margin-bottom: 2rem; /* Define uma margem inferior de 2rem para criar espaço abaixo do elemento */
+    padding: 3.5rem 4rem; /* Define o preenchimento interno do elemento */
+}
+/* Define estilos para a classe .contato_comigo */
+.contato_comigo {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 3.2rem; /* Define o tamanho da fonte como 3.2rem */
+    font-weight: 500; /* Define a espessura da fonte como 500 (mais ou menos média) */
+    line-height: 4.5rem; /* Define a altura da linha como 4.5rem (espaçamento entre linhas) */
+    color: #000000; /* Define a cor do texto como preta (#000000) */
+}
+/* Define estilos para o formulário dentro da classe .contato */
+.contato form {
+    background-color: #ffffff; /* Define a cor de fundo do formulário como branco (#ffffff) */
+    padding: 2rem; /* Define o preenchimento interno do formulário */
+    border-radius: 0.5rem; /* Define um raio de borda de 0.5rem para arredondar as bordas do formulário */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil ao formulário */
+    margin: 2rem 0; /* Define margens superior e inferior de 2rem para criar espaço ao redor do formulário */
+}
+/* Define estilos para as etiquetas do formulário dentro da classe .contato */
+.contato label {
+    display: block; /* Define as etiquetas como elementos de bloco, um abaixo do outro */
+    margin-bottom: 0.5rem; /* Define uma margem inferior de 0.5rem entre as etiquetas */
+}
+/* Define estilos para os campos de entrada de texto e área de texto no formulário dentro da classe .contato */
+.contato input[type="text"],
+.contato input[type="email"],
+.contato textarea {
+    width: 100%; /* Define a largura como 100% para ocupar todo o espaço disponível */
+    padding: 0.5rem; /* Define um pequeno preenchimento interno nos campos */
+    margin-bottom: 1rem; /* Define uma margem inferior de 1rem entre os campos */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida de cor cinza (#ccc) aos campos */
+    border-radius: 0.3rem; /* Define um raio de borda de 0.3rem para arredondar as bordas dos campos */
+    max-height: 30rem; /* Define a altura máxima dos campos como 30rem */
+    resize: vertical; /* Permite a redimensionamento vertical na área de texto */
+}
+/* Define estilos para o botão de envio no formulário dentro da classe .contato */
+.contato button[type="submit"] {
+    background-color: #035984; /* Define a cor de fundo do botão como #035984 (um tom de azul escuro) */
+    color: #fff; /* Define a cor do texto como branco (#fff) */
+    padding: 0.5rem 1rem; /* Define o preenchimento interno do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 0.3rem; /* Define um raio de borda de 0.3rem para arredondar as bordas do botão */
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro quando pairado sobre o botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+/* Define estilos de hover (quando o mouse está sobre) para o botão de envio no formulário */
+.contato button[type="submit"]:hover {
+    background-color: #0063aa; /* Define a cor de fundo do botão como #0063aa (um tom de azul mais escuro) ao pairar sobre ele */
+}

@@ -1,0 +1,131 @@
+/* Define um @font-face para importar a fonte personalizada Lato-Regular */
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/fontes/Lato-Regular.ttf") format("truetype");
+}
+/* Define estilos globais para todos os elementos */
+* {
+    margin: 0; /* Remove margens externas padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+    box-sizing: border-box; /* Faz com que a largura e altura incluam preenchimento e borda */
+    scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
+    font-family: "Lato-Regular"; /* Define a fonte padrão (personalizada) para todo o documento */
+}
+/* Define o tamanho da fonte para o elemento HTML base (62.5% de 16px, ou seja, 10px) */
+html {
+    font-size: 62.5%;
+}
+/* Estilos globais para o corpo do documento */
+body {
+  font-size: 1.6rem; /* Define o tamanho de fonte base em 16px (1.6rem é 16px * 1.6) */
+  margin-top: 10rem; /* Define uma margem superior de 10rem no corpo do documento */
+}
+
+/* Remove estilos de marcadores de lista padrão para listas não ordenadas */
+ul {
+    list-style: none;
+}
+/* Remove a decoração de link padrão e herda a cor do texto atual */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Estilos para cabeçalhos H1 */
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+/* Estilos para outros títulos secundários */
+.secondary-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+}
+/* Estilos para títulos terciários */
+.tertiary-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4.5rem; /* Define a altura da linha para 4.5rem para um espaçamento adequado */
+    color: #000000;
+}
+/* Estilos para parágrafos */
+p,
+  .p {
+    font-weight: 400; /* Define a espessura da fonte para parágrafos como normal (400) */
+    font-size: 1.6rem; /* Define o tamanho da fonte para parágrafos como 1.6rem */
+    line-height: 3rem; /* Define a altura da linha para 3rem para um espaçamento adequado */
+}
+/* Define margem inferior para parágrafos, exceto o último parágrafo */
+p:not(:last-of-type),.p:not(:last-of-type) {
+    margin-bottom: 2rem; /* Define uma margem inferior */
+}
+/* Estilos para botões */
+.btn {
+  background-color: none; /* Define a cor de fundo dos botões como nenhum */
+  border: none; /* Remove as bordas dos botões */
+  outline: none; /* Remove o destaque do foco ao clicar */
+  padding: 1rem 3rem; /* Define preenchimento interno de 1rem na vertical e 3rem na horizontal */
+  display: inline-block; /* Faz com que os botões sejam exibidos como elementos de bloco */
+  border-radius: 0.5rem; /* Adiciona uma borda arredondada de 0.5rem aos botões */
+}
+/* Estilos para botões */
+.btn.btn-primary {
+  background-color: #B4CED9; /* Define a cor de fundo para botões primários */
+  color: #000000; /* Define a cor do texto para preto */
+  font-weight: 600; /* Define a espessura da fonte para botões primários como semi-negrito (600) */
+  font-size: 1.3rem; /* Define o tamanho da fonte para botões primários como 1.3rem */
+}
+/* Estilos para limitar a largura máxima de elementos */
+.max-width {
+  width: 100%; /* Define a largura como 100% para ocupar o espaço disponível */
+  max-width: 120rem; /* Define a largura máxima como 120rem (1200px) */
+  padding: 0 4rem; /* Adiciona preenchimento horizontal de 4rem */
+  margin-bottom: 3rem; /* Define uma margem inferior de 3rem */
+}
+/* Estilos para margens inferiores personalizadas */
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-s {
+    margin-bottom: 1rem;
+}
+
+.mb-m {
+    margin-bottom: 2rem;
+}
+  
+  .mb-l {
+    margin-bottom: 4rem;
+  }
+  
+.mb-xl {
+    margin-bottom: 6rem;
+}
+/* Media query para ajustar estilos em telas com largura máxima de 1024px */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 60%; /* Reduz o tamanho da fonte base para 60% */
+  }
+  
+  h1 {
+    font-size: 6rem; /* Aumenta o tamanho da fonte para H1 para 6rem */
+  }
+}
+/* Media query para ajustar estilos em telas com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 58%; /* Reduz o tamanho da fonte base para 58% */
+  }
+  /* Ajusta o preenchimento horizontal para elementos com classe "max-width" */
+  .max-width {
+    padding: 0 2rem;
+  }
+}
+/* Media query para ajustar estilos em telas com largura máxima de 425px */
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 4.2rem; /* Reduz o tamanho da fonte para H1 para 4.2rem */
+  }
+}

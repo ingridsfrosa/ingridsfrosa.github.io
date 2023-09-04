@@ -1,0 +1,42 @@
+/*Define uma margem superior para a ancoragem de rolagem para evitar que o cabeçalho sobreponha o conteúdo*/
+.sobremim{
+    scroll-margin-top: 8rem;
+}
+/*Estilos para os elementos dentro da seção "Sobre Mim"*/
+.sobremim .sobremim_elements {
+    padding: 6rem 4rem; /*Adiciona preenchimento interno de 6rem (acima/abaixo) e 4rem (esquerda/direita)*/
+    text-align: left; /*Alinha o texto à esquerda*/
+}
+/*Remove os marcadores de lista padrão (pontos)*/
+.sobremim .sobremim_elements ul {
+    list-style-type: none;
+}
+/*Estilos para cada item da lista dentro da seção "Sobre Mim"*/
+.sobremim .sobremim_elements ul li {
+    margin-bottom: 2rem; /*Adiciona margem na parte inferior de cada item da lista*/
+    margin-top: 2rem; /*Adiciona margem na parte superior de cada item da lista*/
+}
+/*Estilos para o título (h3) dentro da classe "sobremim_left"*/
+.sobremim .sobremim_elements .sobremim_left h3{
+    padding: 1rem 0 1rem; /*Adiciona preenchimento interno na parte superior e inferior do título*/
+}
+/*Estilos para o link (a) dentro da classe "sobremim_left"*/
+.sobremim .sobremim_elements .sobremim_left a{
+    padding: 1em 0 1rem; /*Adiciona preenchimento interno no topo e na parte inferior do link*/
+}
+/*Estilos específicos para telas pequenas (máximo de 768px) usando media query*/
+@media only screen and (max-width: 768px) {
+    .sobremim {
+      flex-direction: column; /*Altera a direção do flex container para coluna*/
+      align-items: center; /*Centraliza os itens horizontalmente*/
+    }
+    /*Estilos para a classe "sobremim_left" em telas pequenas*/
+    .sobremim .sobremim_left {
+      max-width: 66rem; /*Define a largura máxima para 66rem*/
+      text-align: center; /*Centraliza o texto no centro da tela*/
+    }
+    /*Estilos para a classe "sobremim_right" em telas pequenas*/
+    .sobremim .sobremim_right {
+      text-align: left; /*Alinha o texto à esquerda*/
+    }
+}

@@ -1,0 +1,9 @@
+/*Aqui faço a importação de todas as estilizações*/
+@import url(./globais.css);
+@import url(./barranav.css);
+@import url(./header.css);
+@import url(./sobremim.css);
+@import url(./academico.css);
+@import url(./projetos.css);
+@import url(./contato.css);
+@import url(./footer.css);

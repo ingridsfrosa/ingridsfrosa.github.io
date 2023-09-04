@@ -1,0 +1,61 @@
+/*Define uma margem inferior para dar espaço entre a seção de projetos e o conteúdo abaixo*/
+.projetos {
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem; /*Define uma margem superior para a ancoragem de rolagem para evitar que o cabeçalho sobreponha o conteúdo*/
+}
+/*Estilos para os elementos dentro da seção "Projetos"*/
+.projetos .projetos_elements {
+    max-width: 56rem; /*Define a largura máxima para 56rem*/
+    text-align: center; /*Centraliza o texto no centro da tela*/
+    margin: 10rem auto 6rem; /*Margem superior 10rem, margem inferior 6rem e margem horizontal automática para centralizar*/
+}
+/*Estilos para cada item da lista não ordenada dentro da seção "Projetos"*/
+.projetos ul li {
+    display: flex; /*Usa flexbox para alinhar os elementos horizontalmente*/
+    justify-content: space-between; /*Espaço igual entre os elementos dentro do flex container*/
+    align-items: center; /*Centraliza verticalmente os itens dentro do flex container*/
+    gap: 4rem; /*Espaço de 4rem entre os elementos flexíveis*/
+}
+/*Reverte a ordem dos itens em cada linha quando a classe "projetos_lista-reversa" está presente*/
+.projetos ul li.projetos_lista-reversa{
+    flex-direction: row-reverse; /*Reverte a ordem dos elementos flexíveis na linha*/
+}
+/* Adiciona margem inferior para todos os itens da lista, exceto o último */
+.projetos ul li:not(:last-of-type) {
+    margin-bottom: 10rem; /* Margem inferior de 10rem */
+}
+/* Estilos para as imagens dentro de cada item da lista */
+.projetos ul li .image img{
+    width: 100%; /* Largura de 100% */
+    min-width: 40rem; /* Largura mínima de 40rem */
+    max-width: 47rem; /* Largura máxima de 47rem */
+    height: auto; /* Altura automática para manter a proporção */
+}
+/* Estilos para as informações do projeto dentro de cada item da lista */
+.projetos ul li .projetos_info{
+    max-width: 47rem; /* Largura máxima de 47rem */
+}
+/* Adiciona margem ao parágrafo dentro das informações do projeto */
+.projetos ul li .projetos_info p{
+    margin: 1rem 0 4rem; /* Margem superior de 1rem, sem margem nas laterais, margem inferior de 4rem */
+}
+/* Estilos para o link dentro das informações do projeto */
+.projetos ul li .projetos_info a{
+    font-weight: 500; /* Peso da fonte 500 (médio) */
+    text-decoration: underline; /* Adiciona sublinhado ao link */
+}
+/* Estilos específicos para telas pequenas (máximo de 768px) usando media query */
+@media only screen and (max-width: 768px) {
+    .projetos ul li,
+    .projetos ul li.projetos_lista-reversa {
+        flex-direction: column; /* Altera a direção do flex container para coluna */
+    }
+    /* Aumenta a largura máxima para itens em telas pequenas */
+    .projetos ul li .projetos_info {
+      max-width: 66rem;
+    }
+    /* Remove a largura mínima da imagem em telas pequenas */
+    .projetos ul li .image img {
+      min-width: auto;
+    }
+  }

@@ -1,0 +1,81 @@
+/* Define estilos para a classe .navbar */
+.navbar {
+    position: fixed; /* Fixa a barra de navegação na parte superior da janela de visualização */
+    top: 0; /* Define a posição superior da barra de navegação como 0 */
+    left: 0; /* Define a posição esquerda da barra de navegação como 0 */
+    width: 100%; /* Define a largura da barra de navegação como 100% da largura da tela */
+    z-index: 10; /* Define a ordem de empilhamento da barra de navegação (superior) */
+    background-color: #ffffff; /* Define a cor de fundo da barra de navegação como branco */
+}
+/* Define estilos para a classe .navbar_conts dentro da barra de navegação */
+.navbar .navbar_conts {
+    padding: 3rem 4rem 1rem; /* Define o preenchimento interno da barra de navegação */
+    display: flex; /* Define um contêiner flexível para os elementos da barra de navegação */
+    justify-content: space-between; /* Espaça os elementos igualmente no espaço disponível */
+}
+/* Define estilos para os itens da lista de links dentro da classe .navbar_links */
+.navbar .navbar_conts .navbar_links li{
+    display: inline-block; /* Exibe os links horizontalmente em uma única linha */
+}
+/* Define estilos para todos os itens da lista de links, exceto o último */
+.navbar .navbar_conts .navbar_links li:not(:last-of-type){
+    margin-right: 2rem; /* Adiciona margem à direita de todos os itens, exceto o último */
+}
+/* Define estilos para os links dentro da classe .navbar_links */
+.navbar .navbar_conts .navbar_links a{
+    padding: 1rem; /* Adiciona preenchimento interno aos links */
+    display: inline-block; /* Exibe os links como blocos em linha */
+}
+/* Define estilos de hover (quando o mouse está sobre) para os links */
+.navbar .navbar_conts .navbar_links a:hover {
+    transition: color 0.8s ease; /* Adiciona uma transição suave para a mudança de cor do texto */
+    color: #0063aa; /* Define a cor do texto como azul escuro (#0063aa) ao pairar sobre os links */
+}
+/* Define estilos para o menu móvel que não está visível por padrão, até ser ativado em telas menores */
+.navbar .navbar_conts .navbar_mobile, .navbar .navbar_conts .navbar_mobile .menumobile_links{
+    display: none;
+}
+/* Define estilos para a barra de navegação quando está ativa (rolada para baixo) */
+.navbar.active {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+/* Define estilos para a barra de navegação em telas menores (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .navbar .navbar_conts .navbar_links{
+        display: none; /* Oculta os links (horizontais) da barra de navegação em telas menores */
+    }
+
+    .navbar .navbar_conts .navbar_mobile {
+        display: flex; /* Exibe o menu móvel como um flex container */
+        align-items: center; /* Alinha os itens verticalmente no centro */
+    }
+
+    .navbar .navbar_conts .navbar_mobile img{
+        width: 3.6rem; /* Define a largura da imagem do menu móvel */
+        height: 3.6rem; /* Define a altura da imagem do menu móvel */
+        cursor: pointer; /* Altera o cursor do mouse para um ponteiro ao pairar sobre a imagem */
+    }
+
+    .navbar .navbar_conts .navbar_mobile.active .menumobile_links {
+        display: flex; /* Exibe os links do menu móvel */
+        flex-direction: column; /* Alinha os links verticalmente em uma coluna */
+        background-color: #B4CED9; /* Define a cor de fundo do menu móvel */
+        width: 100%; /* Define a largura do menu móvel como 100% da tela */
+        position: absolute; /* Define a posição absoluta do menu móvel */
+        top: 98%; /* Define a posição superior do menu móvel em relação à barra de navegação */
+        left: 0; /* Define a posição esquerda do menu móvel como 0 */
+        padding: 1rem 0; /* Define o preenchimento interno do menu móvel */
+        box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao menu móvel */
+        z-index: 1; /* Define a ordem de empilhamento do menu móvel (superior) */
+    }
+    /* Define estilos para os itens do menu móvel */
+    .navbar .navbar_conts .navbar_mobile.active .menumobile_links li{
+        margin-right: 0; /* Remove a margem direita dos itens do menu móvel */
+    }
+    /* Define estilos para os links no menu móvel */
+    .navbar .navbar_conts .navbar_mobile.active .menumobile_links li a{
+        padding: 1rem; /* Adiciona preenchimento interno aos links do menu móvel */
+        display: block; /* Exibe os links do menu móvel como blocos em linha */
+        text-align: center; /* Centraliza o texto dos links no menu móvel */
+    }
+}

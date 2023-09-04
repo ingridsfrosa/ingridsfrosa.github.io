@@ -1,0 +1,19 @@
+/* Define estilos para a classe .academico */
+.academico {
+    background-color: #0359844f; /* Define a cor de fundo da seção acadêmica com transparência */
+    scroll-margin-top: 8rem; /* Define a margem superior de rolagem para a seção acadêmica */
+}
+/* Define estilos para a classe .academico_elements dentro da seção acadêmica */
+.academico .academico_elements{
+    padding: 6rem 4rem; /* Define o preenchimento interno da seção acadêmica */
+    text-align: left; /* Alinha o texto à esquerda dentro da seção acadêmica */
+}
+/* Define estilos para a lista não ordenada (ul) dentro da classe .academico_elements */
+.academico .academico_elements ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão da lista não ordenada */
+}
+/* Define estilos para os itens da lista (li) dentro da classe .academico_elements */
+.academico .academico_elements ul li {
+    margin-bottom: 2rem; /* Adiciona margem na parte inferior de cada item da lista */
+    margin-top: 2rem; /* Adiciona margem na parte superior de cada item da lista */
+}

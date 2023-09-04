@@ -1,0 +1,55 @@
+/*Estilos para o cabeçalho (header)*/
+header {
+    background-color: #035984; /* Cor de fundo azul */
+    display: flex; /* Exibe os elementos do cabeçalho em um flex container */
+    justify-content: space-between; /* Espaço uniformemente entre os elementos no cabeçalho */
+    align-items: left; /* Alinha os elementos verticalmente à esquerda */
+    gap: 4rem; /* Espaço de 4rem entre os elementos no cabeçalho */
+    scroll-margin-top: 10rem; /* Define uma margem superior para rolagem de 10rem */
+}
+/* Estilos para a parte esquerda do cabeçalho (header_left) */
+header .header_left {
+    padding: 6rem 4rem; /* Preenchimento interno de 6rem na vertical e 4rem na horizontal */
+    max-width: 62rem; /* Largura máxima de 62rem para evitar que o conteúdo se estenda demais */
+    flex: 1; /* Ocupa o espaço disponível restante no cabeçalho */
+}
+/* Estilos para parágrafos dentro da parte esquerda do cabeçalho */
+header .header_left p {
+    margin-top: 2rem; /* Margem superior de 2rem */
+    margin-bottom: 4rem; /* Margem inferior de 4rem */
+    max-width: 50rem; /* Largura máxima de 50rem para limitar o comprimento do texto */
+}
+/* Estilos para a parte direita do cabeçalho (header_right) */
+header .header_right .header_image {
+    position: relative; /* Define a posição relativa para o elemento */
+    line-height: 0; /* Remove a altura da linha para ajustar melhor a imagem */
+}
+/* Estilos para o pseudo-elemento ::after do elemento com classe "header_image" */
+header .header_right .header_image::after {
+    content: ""; /* Adiciona um conteúdo vazio (pseudoelemento usado para criar uma sobreposição) */
+    display: block; /* Exibe como bloco (ocupando toda a largura disponível) */
+    width: 100%; /* Largura de 100% */
+    height: 100%; /* Altura de 100% (igual à altura do elemento pai) */
+}
+/* Estilos para a imagem dentro da parte direita do cabeçalho */
+header .header_right .header_image .ingrid {
+    border-radius: 0.5rem; /* Borda arredondada de 0.5rem */
+    max-width: 30rem; /* Largura máxima de 30rem para a imagem */
+}
+/* Estilos aplicados em telas com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column-reverse; /* Altera a direção do flex container para coluna */
+        text-align: center; /* Centraliza o texto no centro do cabeçalho */
+    }
+  
+    header .header__left p {
+        margin: 2rem auto 4rem; /* Margem de 2rem superior e inferior, e margem automática nas laterais */
+    }
+    /* Estilos adicionais para a imagem no cabeçalho para telas pequenas */
+    .header .header_right .header_image .ingrid {
+        border-radius: 0.5rem; /* Borda arredondada de 0.5rem */
+        max-width: 30rem; /* Largura máxima de 30rem */
+        border: 1rem solid #000; /* Adiciona uma borda preta */
+    }
+}
