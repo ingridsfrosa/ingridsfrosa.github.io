@@ -71,13 +71,13 @@ main{
 }
 /* Adicionando as fotos */
 .modulo.parallax.parallax_1 {
-    background-image: url(/parallax/imagens/noite_estrelada.jpg);
+    background-image: url(imagens/noite_estrelada.jpg);
 }
 
 .modulo.parallax.parallax_2 {
-    background-image: url(/parallax/imagens/amendoeira_em_flor.jpg);
+    background-image: url(imagens/amendoeira_em_flor.jpg);
 }
 
 .modulo.parallax.parallax_3 {
-    background-image: url(/parallax/imagens/girassois.jpg);
+    background-image: url(imagens/girassois.jpg);
 }
