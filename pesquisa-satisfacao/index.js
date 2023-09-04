@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
     sendBtn.addEventListener("click", function () {
       caixa.innerHTML = `
-          <i class="fas fa-heart"></i>
           <h1>Obrigada!</h1>
           <br>
           <strong>Feedback: ${classificacaoSelecionada}</strong>
