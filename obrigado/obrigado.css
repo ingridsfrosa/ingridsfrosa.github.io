@@ -17,7 +17,7 @@ html {
 }
 /* Estilos globais para o corpo do documento */
 body {
-    background-image: url('./images/howls-pixel.jpg'); /* Define uma imagem de plano de fundo */
+    background-image: url('images/howls-pixel.jpg'); /* Define uma imagem de plano de fundo */
     background-size: cover; /* Cobrir toda a área visível com a imagem de plano de fundo */
     background-repeat: no-repeat; /* Evitar repetições da imagem de plano de fundo */
     background-position: center center; /* Centraliza a imagem de plano de fundo */
