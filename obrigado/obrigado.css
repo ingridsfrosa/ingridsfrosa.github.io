@@ -1,0 +1,117 @@
+/* Define um @font-face para importar a fonte Lato-Regular */
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("/fontes/Lato-Regular.ttf") format("truetype");
+}
+/* Define estilos globais para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
+    font-family: "Lato-Regular"; /* Define a fonte padrão para todo o documento */
+}
+/* Define o tamanho da fonte para o elemento HTML base (62.5% de 16px, ou seja, 10px) */
+html {
+      font-size: 62.5%;
+}
+/* Estilos globais para o corpo do documento */
+body {
+    background-image: url('images\howls-pixel.jpg'); /* Define uma imagem de plano de fundo */
+    background-size: cover; /* Cobrir toda a área visível com a imagem de plano de fundo */
+    background-repeat: no-repeat; /* Evitar repetições da imagem de plano de fundo */
+    background-position: center center; /* Centraliza a imagem de plano de fundo */
+    background-attachment: fixed; /* Fixa a imagem de plano de fundo para que ela não role com a página */
+    font-size: 1.6rem; /* Define o tamanho da fonte padrão */
+    margin-top: 10rem; /* Margem superior de 10rem */
+}
+/* Estilos para links */
+a {
+    text-decoration: none; /* Remove a decoração de sublinhado padrão dos links */
+    color: inherit; /* Usa a cor de texto padrão para os links */
+}
+/* Estilos para cabeçalhos H1 */
+h1 {
+    font-size: 4.5rem; /* Tamanho da fonte de 4.5rem */
+    font-weight: 700; /* Peso da fonte 700 (negrito) */
+    color: #000000; /* Cor do texto preto */
+}
+/* Estilos para parágrafos e elementos com classe "p" */
+p {
+    font-weight: 400; /* Peso da fonte 400 (regular) */
+    font-size: 1.6rem; /* Tamanho da fonte de 1.6rem */
+    line-height: 3rem; /* Altura da linha de 3rem para melhor legibilidade */
+}
+
+.obrigado {
+    margin: 0 auto; /* Centraliza horizontalmente com margens automáticas */
+    width: 60%; /* Largura de 60% */
+    text-align: center; /* Centraliza o texto no centro */
+    background-color: rgba(0, 0, 0, 0.336); /* Cor de fundo com transparência */
+    border-radius: 0.5rem; /* Borda arredondada de 0.5rem */
+}
+
+/* Estilos para o título dentro da div "obrigado" */
+.obrigado .titulo_obrigado {
+    margin-bottom: 4rem; /* Margem inferior de 4rem */
+}
+
+/* Estilos para o texto dentro da div "obrigado" */
+.obrigado .texto_obrigado {
+    margin-bottom: 4rem; /* Margem inferior de 4rem */
+}
+/* Estilos para botões */
+.btn {
+    background-color: none; /* Remove a cor de fundo */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove a borda de foco */
+    padding: 1rem 3rem; /* Preenchimento de 1rem na vertical e 3rem na horizontal */
+    display: inline-block; /* Exibe como bloco inline */
+    border-radius: 0.5rem; /* Borda arredondada de 0.5rem */
+}
+    
+/* Estilos para botões com classe "btn-primary" */
+.btn.btn-primary {
+    background-color: #035984; /* Cor de fundo azul */
+    color: #000000; /* Cor do texto preto */
+    font-weight: 600; /* Peso da fonte 600 (semi-negrito) */
+    font-size: 1.3rem; /* Tamanho da fonte de 1.3rem */
+    margin-bottom: 4rem; /* Margem inferior de 4rem */
+}
+
+/* Estilos de hover para botões com classe "btn-primary" */
+.btn.btn-primary:hover {
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar o mouse */
+    background-color: #B4CED9; /* Altera a cor de fundo ao passar o mouse */
+    transition: 3s ease; /* Adiciona uma transição de 3 segundos suave */
+}
+
+/* Estilos para garantir que o conteúdo tenha uma largura máxima e preenchimento */
+.max-width {
+    width: 100%; /* Largura de 100% */
+    max-width: 120rem; /* Largura máxima de 120rem */
+    padding: 0 4rem; /* Preenchimento de 0 na vertical e 4rem na horizontal */
+}
+
+/* Estilos específicos para telas com largura máxima de 1024px */
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 60%;} /* Tamanho da fonte de 60% em telas menores */
+    
+    h1 {
+        font-size: 6rem;} /* Tamanho da fonte de 6rem em telas menores */
+}
+/* Estilos específicos para telas com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 58%;} /* Tamanho da fonte de 58% em telas ainda menores */
+    /* Reduz o preenchimento horizontal para elementos com classe "max-width" */
+    .max-width {
+        padding: 0 2rem;}
+}
+/* Estilos específicos para telas com largura máxima de 425px */
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 4.2rem;} /* Tamanho da fonte de 4.2rem em telas muito pequenas */
+}
+
